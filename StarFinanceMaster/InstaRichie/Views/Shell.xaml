@@ -13,7 +13,7 @@
 
     <Controls:HamburgerMenu x:Name="MyHamburgerMenu">
 
-        <Controls:HamburgerMenu.PrimaryButtons>
+        
             <!--  DashBoard button  -->
             <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:DashBoardPage" 
                                           AutomationProperties.Name="Jerry"
@@ -113,7 +113,20 @@
 
 
 
-        </Controls:HamburgerMenu.PrimaryButtons>
+
+            <!--  Contact Details button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:ContactDetailsPage" 
+                                          AutomationProperties.Name="Jerry"
+                                          >
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48"
+                		Symbol="Phone" />
+                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                               Text="Contact Details" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+
+       
 
         <Controls:HamburgerMenu.SecondaryButtons>
             <!--  settingspage button  -->
